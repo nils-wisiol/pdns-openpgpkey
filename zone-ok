@@ -1,0 +1,14 @@
+{
+    "name": "ok.test.",
+    "kind": "native",
+    "rrsets": [
+        {
+            "name": "ok.test.",
+            "type": "OPENPGPKEY",
+            "records": [
+                {"disabled": false, "content": "mG8EXtVIsRMFK4EEACIDAwQSZPNqE4tSxLFJYhX+uabSgMrhOqUizJhkLx82"}
+            ],
+            "ttl": 60
+        }
+    ]
+}

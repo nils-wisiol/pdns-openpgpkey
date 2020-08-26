@@ -1,0 +1,14 @@
+{
+    "name": "fail.test.",
+    "kind": "native",
+    "rrsets": [
+        {
+            "name": "fail.test.",
+            "type": "OPENPGPKEY",
+            "records": [
+                {"disabled": false, "content": "mG8EXtVIsRMFK4EEACIDAwQSZPNqE4tSxLFJYhX+uabSgMrhOqUizJhk Lx82"}
+            ],
+            "ttl": 60
+        }
+    ]
+}

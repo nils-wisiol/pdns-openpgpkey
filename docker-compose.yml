@@ -1,0 +1,36 @@
+version: '2.2'
+
+services:
+  db:
+    build: db
+    init: true
+    user: mysql:mysql
+    volumes:
+    - db:/var/lib/mysql
+    environment:
+    - DB_PASSWORD
+    networks:
+    - rear
+    restart: unless-stopped
+    ports:
+      - "3306:3306"
+
+  ns:
+    build: ns
+    init: true
+    environment:
+    - DB_PASSWORD
+    depends_on:
+    - db
+    networks:
+    - rear
+    restart: unless-stopped
+    ports:
+      - "5353:53"
+      - "8081:8081"
+
+volumes:
+  db:
+
+networks:
+  rear:
